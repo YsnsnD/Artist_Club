@@ -1,0 +1,121 @@
+body{
+	position: flex;
+	
+	background-color: #000000;
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff; 
+}
+.section{
+	/*padding-bottom: 80px;*/
+	display: flex;
+	/*padding-top: 79px;*/
+	padding-left: 96px;
+
+}
+/*Измененный размера поля регистрации и входа в хедере*/
+#registerplusvhod{
+	width: 130px;
+}
+/*Измененая ориентация спрятанной навигации*/
+#hideNav{
+	width:100%;
+	justify-content: center;
+}
+/* "Коробка" с полями ввода*/
+.obodok{	
+	width: 900px;
+	height: 439px;
+	background: #000000;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	box-sizing: border-box;
+	padding: 50px;
+}
+/*Поле ввода обычного текста*/
+.simple-text{
+	width: 500px;
+	height: 40px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 24px;
+	/* identical to box height, or 160% */
+
+	letter-spacing: -0.015em;
+	margin-bottom: 15px;
+	color: #000000;
+	
+}
+/*Заголовок*/
+h4{	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height, or 150% */
+
+	letter-spacing: -0.015em;
+
+	color: #FFFFFF
+}
+/*Вход в аккаунт*/
+.akk{	
+	width: 168px;
+	height: 40px;
+	background: #EAEAEA;
+	border-radius: 6px;
+}
+#akk{
+	text-align: center;
+	width: 161.54px;
+	height: 18px;
+	margin: 0 auto;
+	padding-bottom: 11px;
+	padding-top: 11px;
+	padding-left: 3.88px;
+	padding-right: 2.58px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	display: inline-block;
+	align-items: center;
+	letter-spacing: -0.015em;
+	color: #000000;
+
+}
+/*Медиа-запросы*/
+@media(max-width:1100px)
+{
+	.obodok{
+		width:600px;
+		margin: 0px;
+		margin: auto;
+	}	
+	.section{
+		padding: 0px;
+	}
+}
+@media(max-width:700px)
+{
+	.obodok{
+		width:90%;
+		margin: auto;
+	}
+	.simple-text{
+		width:95%;
+		margin: auto inherit;
+	}	
+}
+@media(max-width:500px)
+{
+	.akk{
+		width:97%;
+		margin: auto inherit;
+		text-align: center;		
+	}
+}
+

@@ -1,0 +1,143 @@
+/*Переопределение регистрации и входа*/
+#registerplusvhod{
+	width: 130px;
+}
+/*Переопределение навигации*/
+#hideNav{
+	width:100%;
+	justify-content: center;
+}
+/*"Коробка" для полей ввода*/
+.obodok{
+	width: 95%;
+	height: 523px;
+	background: #000000;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	box-sizing: border-box;
+}
+/*Поля ввода*/
+#inputs{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+/* Колонка обычных полей ввода и остального*/
+#simptxtPart,#othPart{
+	width:45%;
+}
+/*Обычные поля ввода*/
+.simple-text{
+	width: 100%;
+	height: 40px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 24px;
+	/* identical to box height, or 160% */
+
+	letter-spacing: -0.015em;
+	margin-bottom: 15px;
+	color: #000000;
+	
+}
+/*Многосточное поле ввода "О себе"*/
+#about{
+	width: 99%;
+	height: 174px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 24px;
+	/* identical to box height, or 160% */
+	letter-spacing: -0.015em;
+	margin-bottom: 15px;
+	color: #000000;
+	padding: 5px;
+    resize: none;
+}
+/*Чек бокс*/
+#hochu{
+	display: flex;
+	flex-direction: row;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 24px;
+	/* or 160% */
+
+	letter-spacing: -0.015em;
+
+	color: white;
+}
+/*Текст напротив чекбокса*/
+#hochu p{
+	margin-top: -2px;
+	padding-left: 15px;
+}
+/*Заголовок*/
+h4{	
+	
+	padding-left: 2.5%;	
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height, or 150% */
+
+	letter-spacing: -0.015em;
+
+	color: #FFFFFF
+}
+/*Регистрация*/
+.akk{	
+	width: 168px;
+	height: 40px;
+	background: #EAEAEA;
+	border-radius: 6px;
+}
+#akk{
+	text-align: center;
+	width: 161.54px;
+	height: 18px;
+	margin: 0 auto;
+	padding-bottom: 11px;
+	padding-top: 11px;
+	padding-left: 3.88px;
+	padding-right: 2.58px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	display: inline-block;
+	align-items: center;
+	letter-spacing: -0.015em;
+	color: #000000;
+
+}
+/*Медиа-запросы*/ 
+@media(max-width:800px)
+{
+	#inputs{
+		flex-direction: column;
+	}
+	.obodok{
+		height: inherit;
+		margin: auto;
+		padding-bottom: 30px;
+	}
+	h4{
+		padding-left: 5%;
+	}
+	#othPart,#simptxtPart{
+		width:90%;
+		margin: auto;
+	}
+	.akk{
+		margin-left: auto;
+	}
+}

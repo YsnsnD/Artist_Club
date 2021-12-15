@@ -1,0 +1,359 @@
+/*Выпадающее меню*/
+.list-hide{
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	position: absolute;
+	list-style: none;
+	margin: 0;	
+	right:0;
+	width: 172px;
+	padding: 10px;
+}
+/*Стиль ссылок в выпадающем меню*/
+.item-hide-a{
+	color:white;
+	text-decoration: none;
+}
+/*Элемент списка в выпадающем меню*/
+.item-hide
+{
+	widows: 172px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+/*Последний элемент списка в выпадающем меню*/
+#last{
+	padding-bottom: 15px;
+}
+/*Кнопка вызова меню*/
+#menu-butt{	
+	position: relative;
+	margin-top: 15px;
+	display: inline-block;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 10px;
+	/* or 50% */
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: #F2994A;
+	text-decoration: none;
+}
+/*Логотип на главном заголовке*/
+.SectionLogo{	
+	display: block;	
+	width: 250px;
+	height: 100px;
+	margin: 0 auto;	
+	padding-top: 18%;
+}
+/*Главный заголовок*/
+.main{
+	background-image: url('MainImgg.png');
+	background-size: cover;
+    width:100%;
+    display: inline-block;
+    padding-top: 13%;
+    
+}
+/*Кнопки входа и регистрации в главной(для моб версии)*/	
+#hideVhod{
+	
+	width:100%;
+	display: none;
+	justify-content: flex-end;
+	margin-top: -13%;
+}
+/* стиль ссылок кнопок в главной*/
+#main-buttons a{
+	text-decoration: none;
+}	
+/*Стиль кнопок в главной*/
+#main-buttons{
+	display: flex;
+	flex-direction: column-reverse;
+	width: 140px;
+}
+#main-buttons .register,.vhod{
+	margin: 0px;
+	margin-bottom: 5px;
+	
+}
+/*Кнопка "Записаться"*/
+#buttonZapic{
+	width:  235px;
+	color: #000;
+	background: #F2F2F2;
+    border-radius: 6px;
+    border-color: #F2F2F2;
+   	padding: 15px 20px 15px 20px;	
+	display: block;        
+	font-style: normal;
+	font-size: 17px;
+	line-height: 21px;	
+	text-align: center;
+	margin:0 auto;
+	margin-top: 39px;
+	margin-bottom: 155px;
+	text-decoration: none;
+}
+/*Афиша*/
+#afisha{
+	margin: auto;
+	
+}
+/*Афиша выставок*/
+.AfishaSection{
+	display: flex;
+	margin: auto;
+	
+}
+/*Заголовок*/
+.Name{
+    text-align: center;
+	display: block;
+	color: #FFF;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 37px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: -0.015em;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+/*Стиль афиши одной выставки*/
+.AfishaObshee{
+
+	text-align: center;
+	justify-content: center;
+	
+	width: 100%;
+	margin: 0 auto;
+}
+/*Изображение в афише выставки*/
+.AfishaObshee img{
+
+	display: flex;
+	width: 100%;
+}
+/*Название выставки*/
+.seminame{	
+	margin-top: -50px;
+	align-items: center;
+	text-align: center;
+}
+.Photo{
+	display:flex;
+	flex-direction: row;
+	width:100%;
+	text-align: center;
+	border-spacing: 0px;
+	
+}
+
+/*Фотогалерея*/
+.Fototable{
+	display: flex;
+	border: none;
+}
+.Fototable tbody{
+	margin: auto;
+}
+/* Изображения в фотогалерее*/
+.PhotoGal{
+	padding: 46px 11px 46px 11px;
+	width: 90%;
+	
+}
+
+
+/*Информация о нас*/
+#about{
+	padding-left: 15%;
+	
+}
+/*Заголовок*/
+.Infa{	
+		
+	
+	margin-top: 91px;
+}
+/*2 абзаца в строку*/
+.twoInRow{
+	display: flex;
+	flex-direction: row;		
+	
+	
+}
+/*Абзац*/
+.tIRelm{
+	width:40%;
+	
+}
+/*Заголовок абзацов*/
+h3{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 36px;
+	 
+
+	letter-spacing: -0.015em;
+
+	color: #FFFFFF;
+}
+/*
+#Adres{
+	display: inline-block;
+	width: 518px;
+	height: 222px;
+	padding-left: 94px;
+	padding-bottom: 64px;
+}*/
+
+/*Заявка на вступление в кружок*/
+.Zayavka{	
+	width:295px;
+	height:46px;
+	background: #4F4F4F;
+	border-radius: 6px;
+	padding: 13px 5px 13px 5px;
+	font-family: Montserrat;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 18px;
+	letter-spacing: -0.015em;
+	text-align: center;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+/*Галерея в мобильной версии*/
+#hideGall{
+	display: none;
+	flex-direction: column;
+}
+/*Изображение мобильной версии галереи*/
+#hideGall img{
+	width:80%;
+	margin: auto;
+	padding-bottom: 10px;
+}
+/*"Спрятанные" ссылки на регистрацию и вход*/
+#hideMainRegVhod{
+	
+	flex-direction: row;
+	justify-content: space-around;
+	
+	display: none;
+}
+#hideMainRegVhod a{
+	text-decoration: none;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 29px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: -0.015em;
+
+	color: #000000;
+}
+
+/*Медиа-запросы*/
+@media(max-width:1050px)
+{
+	#hideVhod{
+		display: flex;
+	}
+	#registerplusvhod{
+		display: none;
+	}
+	.navigation{
+		width:100%;
+	}
+	#about{
+		padding: 0;		
+	}
+	.tIRelm{
+		width:50%;
+	}
+}
+@media(max-width:768px)
+{
+	.twoInRow{
+		flex-direction: column;
+	}
+	.tIRelm{
+		width:100%;
+	}
+}
+@media(max-width:680px){
+	.main-navigation{
+		display: none;
+	}
+	#hide-div{
+		display: block;
+	}
+	#hideVhod{
+		display: none;
+	}
+	.SectionLogo{
+		display: none;
+	}
+	.main{
+		padding-top: 13%;
+	}
+	#hideGall{
+		display: flex;
+	}
+	.Fototable{
+		display: none;
+	}
+	.Photo{
+		flex-direction: column;
+	}
+	.Photo img{
+		width:100%;
+		height:100%;		
+		overflow: hidden;
+	}
+	.seminame{
+		font-size: 36px;
+		margin-top: -80px;
+	}
+	#buttonZapic{
+		width:100%;
+		border-radius: 0px;
+		margin: 0px;
+		margin-top: 280px;
+		padding: 15px 0px;
+	}
+	.main{
+		height: 400px;
+	}
+	#hideMainRegVhod{
+		display: flex;
+	}
+	.logo1{
+		margin: 0px;
+	}
+	#about{
+		padding-left: 5px;
+	}
+}
+
+
+	

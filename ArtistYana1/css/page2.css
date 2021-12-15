@@ -1,0 +1,121 @@
+/*Несколько картинок в ряд*/
+.Page{
+	min-width: 200px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.Page21{
+	width: 13%;
+	height: 262px;
+}
+.Page24{
+	
+	width: 60%;
+	height: 262px;
+}
+#hideNav{
+	padding-top: 20px;
+}
+/*Факт из жизни*/
+.Aivazovski{
+	display: flex;
+	width:80%;
+	max-width: 700px;
+	padding-top: 43px;
+	padding-bottom: 42px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;	
+	align-items: center;
+	text-align: center;
+	letter-spacing: -0.015em;
+	margin: 0 auto;
+}
+/*Стиль картинок*/
+.Pese{
+	width: 44%;
+}
+#De{
+	width:12%;
+}
+.PeSeDe{
+	display: flex;
+	flex-wrap: wrap;
+}
+/*Спрятанные изображении (мобильная версия)*/
+#hideShips{
+	display: none;
+}
+#hS{
+	width:100%;
+}
+#hS1{
+	width:70%;
+}
+#hS2{
+	width:30%;
+}
+#hideFaces{
+	display: none;
+}
+#hideFaces img{
+	width:33.33333333%;
+	
+}
+#hS12{
+	display: flex;
+	flex-direction: row;
+}
+
+/*Медиа запросы*/
+@media(max-width:768px)
+{
+	.Page24{
+		width:50%;
+	}
+	.Page21{
+		width:16.5%;
+	}
+}
+@media(max-width:720px)
+{
+	header{
+		background-image: url('4Page2.png');		
+	}
+	.Page{
+		display: none;
+	}
+	#hideShips{
+		display: flex;
+		flex-direction: column;
+	}
+	#hideFaces{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	#registerplusvhod{
+		display: none;
+	}
+	#hideNav{
+		display: flex;
+	}
+	.item-link{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 20px;/* or 111% */
+		display: flex;
+		align-items: center;
+		text-align: center;
+		letter-spacing: -0.015em;
+		color: #000000;
+	}
+	.logo1{
+		margin: 0px;
+	}
+}
